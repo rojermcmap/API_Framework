@@ -1,0 +1,110 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-26T05:40:13.928Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5974000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.deleteprecondition()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "",
+        "description": "",
+        "id": "google-place;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Delete place payload",
+            "match": {
+              "location": "step_definitions.StepDefinition.delete_place_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 318000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user calls \"DeleteplaceAPI\" with \"post\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DeleteplaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "post",
+                  "offset": 34
+                }
+              ],
+              "location": "step_definitions.StepDefinition.user_calls_something_with_something_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "location": "step_definitions.StepDefinition.the_api_call_got_success_with_status_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "\"status\" in response is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 25
+                }
+              ],
+              "location": "step_definitions.StepDefinition.something_in_response_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Google_Place",
+    "description": "",
+    "id": "google-place",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/place_validation.feature",
+    "tags": []
+  }
+]
